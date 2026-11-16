@@ -346,22 +346,22 @@ export default function App() {
                   onToast={toast}
                 />
               )}
-              {item.type === 'campaign' && (
-                <div className="campaign-editor-footer">
-                  <button
-                    className="btn primary"
-                    disabled={issues.length > 0}
-                    title={issues.length ? `Fix ${issues.length} issue(s) first` : 'Launch this campaign'}
-                    onClick={() => launch(item)}
-                  >
-                    {item.launchedAt ? 'Launch again' : 'Launch campaign'}
-                  </button>
-                </div>
-              )}
             </>
           )}
         </main>
       </div>
+      {found && item.type === 'campaign' && (
+        <div className="campaign-launch-outside">
+          <button
+            className="btn primary"
+            disabled={issues.length > 0}
+            title={issues.length ? `Fix ${issues.length} issue(s) first` : 'Launch this campaign'}
+            onClick={() => launch(item)}
+          >
+            {item.launchedAt ? 'Launch again' : 'Launch campaign'}
+          </button>
+        </div>
+      )}
       </>
       )}
 

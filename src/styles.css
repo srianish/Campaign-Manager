@@ -153,8 +153,8 @@ button:disabled { cursor: not-allowed; opacity: 0.45; }
 .crumbs { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; margin-bottom: 10px; color: var(--muted); font-size: 13px; }
 .editor-head { display: flex; justify-content: space-between; align-items: center; gap: 8px; padding-bottom: 14px; margin-bottom: 16px; border-bottom: 1px solid var(--line); }
 .editor-head h2 { font-size: 20px; font-weight: 700; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.campaign-editor-footer { display: flex; justify-content: flex-end; margin-top: 24px; padding-top: 16px; border-top: 1px solid var(--line); }
-.campaign-editor-footer .btn { min-width: 154px; }
+.campaign-launch-outside { display: flex; justify-content: flex-end; margin-top: 14px; }
+.campaign-launch-outside .btn { min-width: 154px; }
 
 .issues { border-radius: 10px; padding: 10px 14px; margin-bottom: 18px; font-size: 13px; }
 .issues.ok { background: var(--ok-bg); color: var(--ok); font-weight: 600; }
